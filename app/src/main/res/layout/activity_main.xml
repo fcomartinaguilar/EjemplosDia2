@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ejemplos.ejerciciosandroid.fma.ejemplosdia2.MainActivity">
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esto es un texto para poder hacer una prueba cambiando el formato de este mismo texto, como su color, su tamaño, ponerlo en negrita..."
+        android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:id="@+id/btnColor"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:onClick="Pulsar"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Negrita"
+        android:onClick="Pulsar"
+        android:id="@+id/btnNegrita"
+        android:layout_alignBottom="@+id/btnColor"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccion"
+        android:onClick="Pulsar"
+        android:id="@+id/btnSeleccion"
+        android:layout_below="@+id/btnColor"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamaño"
+        android:onClick="Pulsar"
+        android:id="@+id/btnTamaño"
+        android:layout_alignBottom="@+id/btnSeleccion"
+        android:layout_alignEnd="@+id/btnNegrita" />
+
+
+</RelativeLayout>
